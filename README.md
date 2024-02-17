@@ -1,10 +1,10 @@
 # Bedrock Model Finetuning
 
-This repo shows how to finetune an Amazon Bedrock foundation model for a summarization task using the Dolly dataset.
+This repo shows how to finetune an Amazon Bedrock foundation model using a sample dataset.
 
 ## Contents
 - `setup_prerequisites.py`: Sets up an S3 bucket and IAM role needed for finetuning 
-- `data_prep.py`: Downloads the Dolly dataset from HuggingFace, preprocesses it to conform with Bedrock finetuning format, and uploads it to the S3 bucket
+- `data_prep.py`: Downloads the dataset, preprocesses it to conform with Bedrock finetuning format, and uploads it to the S3 bucket
 - `finetune.py`: Starts a Bedrock finetuning job using a base foundation model
 - `invoke_model.py`: Starts a basic Streamlit user interface to interact with the finetuned model
 - `requirements.txt`: Python package dependencies 
